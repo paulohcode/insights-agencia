@@ -659,7 +659,27 @@
 			<div class="container">
 				<div class="row">
 					<div class="form-contact-form style3 three v3">
-						<form id="contactform" name="contact" method="post" accept-charset="utf-8" data-netlify="true">
+							<form name="contact" method="POST" data-netlify="true">
+									<p>
+									  <label>Your Name: <input type="text" name="name" /></label>   
+									</p>
+									<p>
+									  <label>Your Email: <input type="email" name="email" /></label>
+									</p>
+									<p>
+									  <label>Your Role: <select name="role[]" multiple>
+										<option value="leader">Leader</option>
+										<option value="follower">Follower</option>
+									  </select></label>
+									</p>
+									<p>
+									  <label>Message: <textarea name="message"></textarea></label>
+									</p>
+									<p>
+									  <button type="submit">Send</button>
+									</p>
+								  </form>
+						<!-- <form name="contact" method="post" accept-charset="utf-8" data-netlify="true">
 							<div class="subscribe-content">
 								<div class="contact-form-name contact-form one-third">
 									<input type="text" id="name" name="name" placeholder="Name |" required="" />
@@ -680,7 +700,7 @@
 							<div id="subscribe-msg">
 								
 							</div>
-						</form><!-- /form -->
+						</form> /form -->
 					</div><!-- /.form-contact-form -->
 				</div><!-- /.row -->
 			</div><!-- /.container -->
